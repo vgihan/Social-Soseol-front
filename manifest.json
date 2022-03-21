@@ -1,0 +1,9 @@
+{
+  "short_name": "소셜 소설",
+  "name": "Social Soseol",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
