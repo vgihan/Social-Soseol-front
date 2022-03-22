@@ -9,22 +9,21 @@ branches:
 
 script:
   - yarn run build
-  - ls -al build
 
 cache:
   directories:
     - node_modules
 
 deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  bucket: social-soseol
-  skip_cleanup: true
-  acl: public_read
-  region: ap-northeast-2
-  wait-until-deploy: true
-  local_dir: build
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: social-soseol
+    skip_cleanup: true
+    acl: public_read
+    region: ap-northeast-2
+    wait-until-deploy: true
+    local_dir: build
 
 install:
   - yarn
