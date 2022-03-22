@@ -18,8 +18,8 @@ cache:
     - node_modules
 
 before_deploy:
-  - echo $AWS_SECRET_ACCESS_KEY
-  - echo $AWS_ACCESS_KEY_ID
+  - echo $AWS_ACCESS_KEY
+  - echo $AWS_SECRET_KEY
 
 deploy:
   - provider: s3
