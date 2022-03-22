@@ -3,6 +3,14 @@ language: node_js
 node_js:
   - '14.17.3'
 
+branches:
+  only:
+    - main
+
+script:
+  - yarn run build
+  - ls -al build
+
 cache:
   directories:
     - node_modules
@@ -16,13 +24,7 @@ deploy:
   acl: public_read
   region: ap-northeast-2
   wait-until-deploy: true
-  local_dir: bulid
-  on:
-    branch: main
+  local_dir: build
 
 install:
   - yarn
-
-script:
-  - yarn run build
-  - ls -al build
