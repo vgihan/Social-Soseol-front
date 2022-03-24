@@ -26,4 +26,4 @@ deploy:
     acl: public_read
     region: ap-northeast-2
     wait-until-deploy: true
-    local_dir: build
+    local_dir: .next
