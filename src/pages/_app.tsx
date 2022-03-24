@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name="description" content="📖 사회가 소설을 만든다 - 소셜 소설 📖" />
         {/* <meta name="naver-site-verification" content="bf0aa56a1eb42c038834ca4aafb118b5d8bf15af" /> */}
         {/* <meta name="google-site-verification" content="QL6xJnBIBwJARnRjGuBW1uDQS98EJZFiFUkfUAxJm54" /> */}
-        <link rel="icon" href="images/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
