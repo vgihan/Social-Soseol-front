@@ -38,7 +38,7 @@ deploy:
     access_key_id: $AWS_ACCESS_ID
     secret_access_key: $AWS_SECRET_KEY
     bucket: social-soseol # S3 버킷 이름
-    key: next-app.zip # 파일명
+    key: .next.zip # 파일명
     bundle_type: zip
     application: social-soseol # CodeDeploy 어플리케이션
     deployment_group: social-soseol-deploy-group # CodeDeploy 배포 그룹
