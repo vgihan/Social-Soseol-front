@@ -35,7 +35,7 @@ deploy:
     local_dir: build
 
   - provider: codedeploy
-    access_key_id: $AWS_ACCESS_ID
+    access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: social-soseol # S3 버킷 이름
     key: build.zip # 파일명
