@@ -17,6 +17,12 @@ cache:
   directories:
     - node_modules
 
+before_deploy:
+  - rm -rf node_modules
+  - zip -r .next *
+  - mkdir -p deploy
+  - mv .next.zip deploy/.next.zip
+
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
@@ -27,3 +33,14 @@ deploy:
     region: ap-northeast-2
     wait-until-deploy: true
     local_dir: .next
+
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_ID
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: social-soseol # S3 버킷 이름
+    key: next-app.zip # 파일명
+    bundle_type: zip
+    application: social-soseol # CodeDeploy 어플리케이션
+    deployment_group: social-soseol-deploy-group # CodeDeploy 배포 그룹
+    region: ap-northeast-2
+    wait-until-deployed: true
