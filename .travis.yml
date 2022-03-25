@@ -42,6 +42,6 @@ deploy:
     key: build.zip # 파일명
     bundle_type: zip
     application: social-soseol # CodeDeploy 어플리케이션
-    deployment_group: social-soseol-deploy-group # CodeDeploy 배포 그룹
+    deployment_group: social-soseol-deploy # CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
