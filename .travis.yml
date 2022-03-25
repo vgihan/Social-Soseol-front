@@ -33,7 +33,7 @@ deploy:
     skip_cleanup: true
     acl: public_read
     wait-until-deploy: true
-    local_dir: build
+    local_dir: deploy
 
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
