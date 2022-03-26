@@ -6,7 +6,7 @@ files:
 permissions:
   - object: /
     owner: vgihan
-    group: ec2-user
+    group: vgihan
     mode: 755
 hooks:
   AfterInstall:
