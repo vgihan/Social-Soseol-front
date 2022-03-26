@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ls
-cd /home/vgihan/social-soseol-front
-ls
 unzip build.zip
+cd /home/vgihan/social-soseol-front
+mkdir node_modules
+sudo chmod -R 777 node_module
 yarn
-npx next start
+pm2 start yarn --name Social-Soseol -- start
