@@ -3,13 +3,8 @@ os: linux
 files:
   - source: /
     destination: /home/vgihan/social-soseol-front
-permissions:
-  - object: /
-    owner: vgihan
-    group: vgihan
-    mode: 755
 hooks:
   AfterInstall:
     - location: execute-deploy.sh
       timeout: 180
-      runas: vgihan
+      runas: root
