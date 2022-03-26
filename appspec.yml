@@ -3,6 +3,11 @@ os: linux
 files:
   - source: /
     destination: /home/vgihan/social-soseol-front
+permissions:
+  - object: /
+    owner: vgihan
+    group: ec2-user
+    mode: 755
 hooks:
   AfterInstall:
     - location: execute-deploy.sh
