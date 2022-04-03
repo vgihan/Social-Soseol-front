@@ -1,11 +1,17 @@
+import styled from '@emotion/styled';
+
 import FlexCenter from '../../../utils/FlexCenter';
 import Logo from '../../../utils/Logo';
 
+const Container = styled(FlexCenter)`
+  align-items: end;
+`;
+
 const LogoArea = () => {
   return (
-    <FlexCenter>
+    <Container>
       <Logo />
-    </FlexCenter>
+    </Container>
   );
 };
 
