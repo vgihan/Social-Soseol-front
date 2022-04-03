@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
           {/* <meta name="naver-site-verification" content="bf0aa56a1eb42c038834ca4aafb118b5d8bf15af" /> */}
           {/* <meta name="google-site-verification" content="QL6xJnBIBwJARnRjGuBW1uDQS98EJZFiFUkfUAxJm54" /> */}
           <link rel="icon" href="favicon.ico" />
+          <link rel="stylesheet" href="css/reset.css" />
         </Head>
         <body>
           <Main />
