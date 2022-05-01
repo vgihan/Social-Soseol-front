@@ -28,6 +28,7 @@
   "rules": {
     "no-shadow": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     "@typescript-eslint/no-shadow": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
