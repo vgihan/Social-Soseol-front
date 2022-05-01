@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          <title>소셜 소설</title>
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
