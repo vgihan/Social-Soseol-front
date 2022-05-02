@@ -1,11 +1,21 @@
+import styled from '@emotion/styled';
 import Link from 'next/link';
 
 import Anchor from '../../../utils/Anchor';
 import FlexCenter from '../../../utils/FlexCenter';
 
+const Container = styled(FlexCenter)`
+  flex-wrap: wrap;
+  > a {
+    @media (max-width: 300px) {
+      font-size: 12px;
+    }
+  }
+`;
+
 const NavigationArea = () => {
   return (
-    <FlexCenter>
+    <Container>
       <Link href="/write">
         <Anchor>글쓰기</Anchor>
       </Link>
@@ -21,7 +31,7 @@ const NavigationArea = () => {
       <Link href="/b">
         <Anchor>글쓰기</Anchor>
       </Link>
-    </FlexCenter>
+    </Container>
   );
 };
 
