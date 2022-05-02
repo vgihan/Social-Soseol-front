@@ -10,6 +10,8 @@ const List = styled.div`
   margin-top: 10px;
   padding: 10px;
   animation: fadein 0.3s ease-in;
+  position: relative;
+  z-index: 10;
   @keyframes fadein {
     from {
       opacity: 0;
