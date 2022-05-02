@@ -9,7 +9,7 @@ import Portal from '../Portal';
 const Background = styled(FlexCenter)`
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
-  z-index: 100;
+  z-index: 30;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -22,6 +22,8 @@ const Frame = styled.div`
   box-sizing: border-box;
   width: 500px;
   height: 650px;
+  position: relative;
+  z-index: 20;
   @media (max-width: ${theme.breakpoints.lg}) {
     width: 400px;
     height: 600px;
@@ -41,10 +43,14 @@ type Props = {
 };
 
 const Modal: React.FC<PropsWithChildren<Props>> = ({ children, onOutsideClick }) => {
+  const handleFrameClick: MouseEventHandler = (e) => {
+    e.stopPropagation();
+  };
+
   return (
     <Portal selector="#portal">
       <Background onClick={onOutsideClick}>
-        <Frame>{children}</Frame>
+        <Frame onClick={handleFrameClick}>{children}</Frame>
       </Background>
     </Portal>
   );
