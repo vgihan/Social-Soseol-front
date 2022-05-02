@@ -5,6 +5,7 @@ import { closeLoginModalAction } from '../../../../store/actions/main/closeLogin
 import LoginModalTemplate from '../../../templates/LoginModalTemplate';
 import FlexCenter from '../../../utils/FlexCenter';
 import KakaoLoginButton from '../../../utils/KakaoLoginButton';
+import Logo from '../../../utils/Logo';
 import Modal from '../../../utils/Modal';
 
 const LoginModal = () => {
@@ -21,7 +22,7 @@ const LoginModal = () => {
     <Modal onOutsideClick={handleModalOutsideClick}>
       <LoginModalTemplate>
         <FlexCenter>
-          <img src="/img/logo.png" alt="logo" />
+          <Logo />
         </FlexCenter>
         <FlexCenter>
           <KakaoLoginButton href="#" />
