@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react';
+import { MouseEventHandler, PropsWithChildren } from 'react';
 
 import styled from '@emotion/styled';
 
@@ -20,10 +20,14 @@ const Frame = styled.div`
   background-color: white;
 `;
 
-const Modal: React.FC<PropsWithChildren<{}>> = ({ children }) => {
+type Props = {
+  onOutsideClick: MouseEventHandler;
+};
+
+const Modal: React.FC<PropsWithChildren<Props>> = ({ children, onOutsideClick }) => {
   return (
     <Portal selector="#portal">
-      <Background>
+      <Background onClick={onOutsideClick}>
         <Frame>{children}</Frame>
       </Background>
     </Portal>
