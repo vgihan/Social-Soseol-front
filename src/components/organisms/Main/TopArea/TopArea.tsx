@@ -8,7 +8,7 @@ import Profile from '../../../utils/Profile';
 
 const Container = styled(FlexCenter)`
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 2vw;
 `;
 const ElementBox = styled.div`
   height: 55%;
