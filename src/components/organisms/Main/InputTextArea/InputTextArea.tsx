@@ -2,9 +2,9 @@ import React, { PropsWithChildren } from 'react';
 
 import styled from '@emotion/styled';
 
-import theme from '../../../../styles/theme';
-import FlexCenter from '../../../utils/FlexCenter';
-import InputText from '../../../utils/InputText';
+import FlexCenter from 'components/utils/FlexCenter';
+import InputText from 'components/utils/InputText';
+import theme from 'styles/theme';
 
 const Container = styled(FlexCenter)`
   width: 100%;

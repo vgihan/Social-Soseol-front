@@ -2,9 +2,10 @@ import { MouseEventHandler, PropsWithChildren } from 'react';
 
 import styled from '@emotion/styled';
 
-import theme from '../../../styles/theme';
 import FlexCenter from '../FlexCenter';
 import Portal from '../Portal';
+
+import theme from 'styles/theme';
 
 const Background = styled(FlexCenter)`
   background-color: rgba(0, 0, 0, 0.4);

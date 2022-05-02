@@ -2,7 +2,7 @@ import { AnchorHTMLAttributes, DetailedHTMLProps } from 'react';
 
 import styled from '@emotion/styled';
 
-import theme from '../../../styles/theme';
+import theme from 'styles/theme';
 
 const KakaoButtonImage = styled.img`
   content: url('/img/kakao_login_long.png');

@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 
-import { AppState } from '../../../../store';
-import { closeLoginModalAction } from '../../../../store/actions/main/closeLoginModal';
-import LoginModalTemplate from '../../../templates/LoginModalTemplate';
-import FlexCenter from '../../../utils/FlexCenter';
-import KakaoLoginButton from '../../../utils/KakaoLoginButton';
-import Logo from '../../../utils/Logo';
-import Modal from '../../../utils/Modal';
+import LoginModalTemplate from 'components/templates/LoginModalTemplate';
+import FlexCenter from 'components/utils/FlexCenter';
+import KakaoLoginButton from 'components/utils/KakaoLoginButton';
+import Logo from 'components/utils/Logo';
+import Modal from 'components/utils/Modal';
+import { AppState } from 'store';
+import { closeLoginModalAction } from 'store/actions/main/closeLoginModal';
 
 const LoginModal = () => {
   const dispatch = useDispatch();

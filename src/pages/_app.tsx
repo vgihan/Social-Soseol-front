@@ -2,8 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Provider } from 'react-redux';
 
-import '../../public/css/reset.css';
-import store from '../store';
+import store from 'store';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

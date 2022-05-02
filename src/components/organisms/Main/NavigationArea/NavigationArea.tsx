@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-import Anchor from '../../../utils/Anchor';
-import FlexCenter from '../../../utils/FlexCenter';
+import Anchor from 'components/utils/Anchor';
+import FlexCenter from 'components/utils/FlexCenter';
 
 const Container = styled(FlexCenter)`
   flex-wrap: wrap;

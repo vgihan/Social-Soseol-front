@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import { useDispatch } from 'react-redux';
 
-import { openLoginModalAction } from '../../../../store/actions/main/openLoginModal';
-import Dropdown from '../../../utils/Dropdown';
-import FlexCenter from '../../../utils/FlexCenter';
-import Profile from '../../../utils/Profile';
+import Dropdown from 'components/utils/Dropdown';
+import FlexCenter from 'components/utils/FlexCenter';
+import Profile from 'components/utils/Profile';
+import { openLoginModalAction } from 'store/actions/main/openLoginModal';
 
 const Container = styled(FlexCenter)`
   justify-content: space-between;
